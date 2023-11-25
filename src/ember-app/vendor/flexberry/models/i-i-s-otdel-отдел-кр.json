@@ -1,0 +1,30 @@
+﻿{
+  "name": "IISOtdelОтделКр",
+  "modelName": "i-i-s-otdel-отдел-кр",
+  "className": "ОтделКр",
+  "nameSpace": "IIS.Otdel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОтделКрE",
+      "modelName": "i-i-s-otdel-отдел-кр",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ОтделКрL",
+      "modelName": "i-i-s-otdel-отдел-кр",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

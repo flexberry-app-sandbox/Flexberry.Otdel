@@ -1,0 +1,71 @@
+﻿{
+  "applicationCaption": "Otdel",
+  "applicationTitle": "Otdel",
+  "items": [
+    {
+      "link": null,
+      "menuName": "otdel",
+      "caption": "Otdel",
+      "title": "Otdel",
+      "children": [
+        {
+          "link": "i-i-s-otdel-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-погаш-кр-l",
+          "menuName": null,
+          "caption": "Погаш кр",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-проверка-кр-кл-l",
+          "menuName": null,
+          "caption": "Проверка кр кл",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-закл-кр-дог-l",
+          "menuName": null,
+          "caption": "Закл кр дог",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-клиенты-l",
+          "menuName": null,
+          "caption": "Клиенты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-отдел-кр-l",
+          "menuName": null,
+          "caption": "Отдел кр",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel-должности-l",
+          "menuName": null,
+          "caption": "Должности",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

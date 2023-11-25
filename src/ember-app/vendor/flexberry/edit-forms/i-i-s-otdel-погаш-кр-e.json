@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ЗаклКрДог",
+      "projection": "ЗаклКрДогL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организация",
+      "projection": "ОрганизацияL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Погаш кр",
+  "name": "IISOtdelПогашКрE",
+  "className": "ПогашКрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-погаш-кр",
+      "modelProjection": "ПогашКрE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-клиенты-e",
+  "editForm": "i-i-s-otdel-клиенты-e",
+  "external": false,
+  "caption": "Клиенты",
+  "name": "IISOtdelКлиентыL",
+  "className": "КлиентыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-клиенты",
+      "modelProjection": "КлиентыL"
+    }
+  ]
+}

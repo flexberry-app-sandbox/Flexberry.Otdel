@@ -1,0 +1,260 @@
+﻿{
+  "name": "IISOtdelПроверкаКрКл",
+  "modelName": "i-i-s-otdel-проверка-кр-кл",
+  "className": "ПроверкаКрКл",
+  "nameSpace": "IIS.Otdel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "доходыВМес",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наличЗалога",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наличиеПоручит",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "одобрениеКр",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "суммаЕжПлЗаКр",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заклКрДог",
+      "relatedTo": "i-i-s-otdel-закл-кр-дог",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-otdel-организация",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПроверкаКрКлE",
+      "modelName": "i-i-s-otdel-проверка-кр-кл",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "доходыВМес",
+          "caption": "Доходы в мес",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "суммаЕжПлЗаКр",
+          "caption": "Сумма еж пл за кр",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "наличЗалога",
+          "caption": "Налич залога",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "наличиеПоручит",
+          "caption": "Наличие поручит",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "одобрениеКр",
+          "caption": "Одобрение кр",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-otdel-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ЦельКр",
+          "lookupValueField": "цельКр",
+          "relationName": "ЗаклКрДог",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "цельКр",
+              "caption": "Цель кр",
+              "hidden": true,
+              "index": 9
+            }
+          ],
+          "index": 8,
+          "type": "standard",
+          "caption": "Закл кр дог",
+          "name": "заклКрДог",
+          "relatedTo": "i-i-s-otdel-закл-кр-дог",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ПроверкаКрКлL",
+      "modelName": "i-i-s-otdel-проверка-кр-кл",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "доходыВМес",
+          "caption": "Доходы в мес",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "суммаЕжПлЗаКр",
+          "caption": "Сумма еж пл за кр",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "наличЗалога",
+          "caption": "Налич залога",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "наличиеПоручит",
+          "caption": "Наличие поручит",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "одобрениеКр",
+          "caption": "Одобрение кр",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "организация",
+          "relatedTo": "i-i-s-otdel-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗаклКрДог",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "цельКр",
+              "caption": "Цель кр",
+              "hidden": false,
+              "index": 7
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Цель кр",
+          "name": "заклКрДог",
+          "relatedTo": "i-i-s-otdel-закл-кр-дог",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,197 @@
+﻿{
+  "name": "IISOtdelПогашКр",
+  "modelName": "i-i-s-otdel-погаш-кр",
+  "className": "ПогашКр",
+  "nameSpace": "IIS.Otdel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "видПогашКр",
+      "type": "i-i-s-otdel-вид-погаш-кр",
+      "flexberryType": "ВидПогашКр",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "суммаПогашКр",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заклКрДог",
+      "relatedTo": "i-i-s-otdel-закл-кр-дог",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-otdel-организация",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПогашКрE",
+      "modelName": "i-i-s-otdel-погаш-кр",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "видПогашКр",
+          "caption": "Вид погаш кр",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "суммаПогашКр",
+          "caption": "Сумма погаш кр",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ЦельКр",
+          "lookupValueField": "цельКр",
+          "relationName": "ЗаклКрДог",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "цельКр",
+              "caption": "Цель кр",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Закл кр дог",
+          "name": "заклКрДог",
+          "relatedTo": "i-i-s-otdel-закл-кр-дог",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-otdel-организация",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ПогашКрL",
+      "modelName": "i-i-s-otdel-погаш-кр",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "видПогашКр",
+          "caption": "Вид погаш кр",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "суммаПогашКр",
+          "caption": "Сумма погаш кр",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗаклКрДог",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "цельКр",
+              "caption": "Цель кр",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Цель кр",
+          "name": "заклКрДог",
+          "relatedTo": "i-i-s-otdel-закл-кр-дог",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "организация",
+          "relatedTo": "i-i-s-otdel-организация",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

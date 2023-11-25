@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-проверка-кр-кл-e",
+  "editForm": "i-i-s-otdel-проверка-кр-кл-e",
+  "external": false,
+  "caption": "Проверка кр кл",
+  "name": "IISOtdelПроверкаКрКлL",
+  "className": "ПроверкаКрКлL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-проверка-кр-кл",
+      "modelProjection": "ПроверкаКрКлL"
+    }
+  ]
+}

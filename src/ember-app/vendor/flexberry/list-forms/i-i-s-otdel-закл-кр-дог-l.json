@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel-закл-кр-дог-e",
+  "editForm": "i-i-s-otdel-закл-кр-дог-e",
+  "external": false,
+  "caption": "Закл кр дог",
+  "name": "IISOtdelЗаклКрДогL",
+  "className": "ЗаклКрДогL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel-закл-кр-дог",
+      "modelProjection": "ЗаклКрДогL"
+    }
+  ]
+}
